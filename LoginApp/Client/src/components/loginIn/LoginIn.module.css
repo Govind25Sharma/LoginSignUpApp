@@ -1,0 +1,100 @@
+/* LoginIn.module.css */
+
+/* Login form container */
+.fullScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+}
+
+.loginContainer {
+    width: 400px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(247, 244, 244);
+    /* White background */
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form heading */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #363e45;
+    /* Dark gray */
+}
+
+/* Input fields */
+.inputField {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+
+/* Input field focus effect */
+.inputField:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+/* Submit button styling */
+.submitButton {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #218838;
+}
+
+/* Back button styling */
+.backButton {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.backButton:hover {
+    background-color: #c82333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 576px) {
+    .loginContainer {
+        width: 90%;
+    }
+}
+
+.errorMessage {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
